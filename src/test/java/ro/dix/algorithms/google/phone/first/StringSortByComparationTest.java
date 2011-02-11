@@ -18,7 +18,14 @@ public class StringSortByComparationTest {
         String expResult = "CCAAAABB";
         String result = instance.sort(target, source);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
+        target = "DAABDBAACC";
+        source = "CAB";
+        instance = new StringSortByComparation();
+        expResult = "CCAAAABBDD";
+        result = instance.sort(target, source);
+        assertEquals(expResult, result);
+        
+        
     }
 }
