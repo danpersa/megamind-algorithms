@@ -10,11 +10,11 @@ public class StringSortByComparation {
         String finalString = "";
         int[] b = new int[source.length()];
         for (int i = 0; i < target.length(); ++i) {
-            String c = finalString.substring(i, i + 1);
+            String c = target.substring(i, i + 1);
             if (!source.contains(c)) {
                 finalString += c;
             } else {
-                b[i]++;
+                b[source.indexOf(c)]++;
             }
         }
         for (int i = source.length() - 1; i >= 0; --i) {
