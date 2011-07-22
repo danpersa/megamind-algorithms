@@ -22,5 +22,7 @@ public class App {
         for (Integer x : v1) {
             System.out.println("" + x + ":");
         }
+        
+        int [] q = new int[2147483647 ];
     }
 }

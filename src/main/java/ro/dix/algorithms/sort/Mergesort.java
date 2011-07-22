@@ -17,7 +17,7 @@ public class Mergesort implements Sortable {
         } else if (start == end) {
             return new int[]{v[start]};
         }
-        int m = (start + end) / 2;
+        int m = start + (start + end) / 2;
         int[] v1 = mergesort(v, start, m);
         int[] v2 = mergesort(v, m + 1, end);
         if (v1 != null) {
